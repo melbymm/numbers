@@ -1,4 +1,3 @@
-
 #! /bin/bash
 # numbers.sh
 # Mitchell Melby
@@ -8,7 +7,7 @@ echo "Enter  positive number: "
 
 read num
 
-while [ $N -le $num ]
+while [ $N -le "$num" ]
 do
 	
 	if [ $((N%2)) -eq 0 ]
@@ -17,5 +16,5 @@ do
 	else
 		echo $N "Odd"
 	fi
-	N=$[$N+1]
+	N=$(($N+1))
 done
